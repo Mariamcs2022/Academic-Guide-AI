@@ -1,0 +1,7 @@
+Flask
+Flask-WTF
+WTForms
+Werkzeug
+numpy
+joblib
+scikit-learn
