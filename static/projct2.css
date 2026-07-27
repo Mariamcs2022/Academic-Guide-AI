@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 6rem; 
+ background-color: #efeeee !important;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.continer {
+  max-width: 1200px;
+  margin: auto;
+}
+.logo2 {
+  margin-top: -30px;
+  height: 150px;
+mix-blend-mode:screen;
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: #2fab99;
+  border-bottom: 2px solid cornsilk;
+  z-index: 1000; 
+}
+
+#header .h1 {
+  color: azure;
+  margin-left: 20px;
+}
+.nav1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav1 ul {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin-top: -30px;
+}
+#header .nav1 li a {
+  font-style: italic;
+  color: rgb(253, 252, 252);
+  font-size: 28px;
+  margin-right: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+#header .nav1 li a:hover {
+  background-color: rgb(217, 241, 241);
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.regstr1:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#header .nav1 li select {
+  background-color: #ffffff;
+  color: #185356;
+  font-size: 22px;
+  font-style: italic;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  padding: 6px 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#header .nav1 li select:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 3px 6px rgba(87, 164, 164, 0.1);
+  font-size: 24px;
+}
+
+#Home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background-image: url(images/fa361.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 140%;
+  
+}
+
+#Home .home11 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+#Home .home1 h1 {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+#Home .home1 p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 25px;
+  color: #034e5f;
+  font-weight: bold;
+  text-align: right;
+  margin-right:30px ;
+}
+
+
+.title h4{
+color: #000;
+font-size:30px;
+}
+#counter1{
+color: #008C7C;
+font-size: 20px;
+font-size: 40px;
+}
+#startBtn{
+ margin-top: 30px;
+  margin-bottom: 20px;
+  background-color:#008C7C;
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 20px 15px rgb(0, 66, 73);
+  font-size: 30px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2rem;
+  padding: 10px;
+  font-style: italic;
+
+}
+#startBtn :hover a{
+  background-color: rgb(44, 47, 48);
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 20px 15px rgba(7, 85, 96, 0.775);
+  font-size: 35px;
+}
+#About {
+  padding-top: 7rem;
+ 
+}
+
+#About .title {
+  margin: 80px 0;
+  max-width: 45ch;
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: 10%;
+padding-top: 30px;
+}
+
+#About .title h1 {
+  font-size: 30px;
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#About.text {
+  margin-block: 1.2rem 2.6rem;
+   text-align: right;
+}
+.About2 img {
+  height: 250px;
+  border-radius: 0 8rem 0 8rem;
+  margin-bottom: 20%;
+  margin-top: -50px;
+  mix-blend-mode: darken;
+}
+.About1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 10%;
+}
+.about-con h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+   text-align: right;
+}
+.about-con p {
+  margin-bottom: 30px;
+  font-size: 25px;
+  margin: 10px;
+   text-align: right;
+}
+
+#Beneficiaries {
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+/* العنوان */
+#Beneficiaries .titles {
+  text-align: center;
+  padding-top: 50px; 
+  margin-top: 30px;
+}
+
+#Beneficiaries .titles h2 {
+  font-size: 27px;
+  font-style: italic;
+  color: #185356;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  transform: scale(1.1);
+  box-shadow: 0 20px 15px rgb(75, 126, 133);
+}
+
+
+.Bene1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding-top: 60px; 
+  margin-top: 50px; 
+}
+
+.Beneficiaries1 {
+  text-align: center;
+  height: 350px;
+  width: 320px;
+  background-color: rgb(255, 255, 255);
+  color: #0e4a3f;
+  border-radius: 0 8rem 0 8rem;
+  box-shadow: 0 20px 15px rgb(0, 0, 0);
+  font-size: 19px;
+  margin: 20px;
+}
+
+.Beneficiaries1 h2 {
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.Beneficiaries1 p {
+  font-weight: bold;
+}
+
+#Beneficiaries .img3 {
+  height: 100px;
+  border-radius: 2rem;
+  padding: 10px;
+}
+#contact {
+  background: #444;
+  color: #f9fdfe;
+  padding: 40px 0;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  direction: rtl;
+}
+
+/* الحاوية */
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* كل عمود */
+.footer-col {
+  min-width: 200px;
+}
+
+.footer-col h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* الروابط */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #cfd8dc;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+
+
+.footer-meta {
+  margin-top: 30px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.25);
+  padding-top: 15px;
+}
+
+.footer-meta p {
+  font-size: 14px;
+  color: #dddddd;
+}

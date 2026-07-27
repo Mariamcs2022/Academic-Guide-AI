@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>results</title>
+  <link rel="stylesheet" href="/static/sresult.css" />
+  <link rel="icon" href=".\static\images\gra.png" type="icon" />
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+</head>
+<body>
+ 
+
+  <h2 class="main-title">التخصصات والجامعات الأنسب لك</h2>
+  <img src="{{ url_for('static' , filename ='images/team3.jpg') }}"    alt=""  class="img">
+<a href="{{ url_for('home') }}" class="exit-link">الخروج</a>
+
+  {% for results1 in results %}
+    <div class="college-card fade-in">
+      <h3> {{ results1.college }}<i class="fa-solid fa-graduation-cap"></i> </h3>
+      <p>   التخصصات : {{ ", ".join(results1.majors) }}</p>
+      
+    </div>
+  {% endfor %}
+  <div class="finay1">
+  <a class="feedback-link" href="{{ url_for('feedback') }}">اسعدنا بكتابة ملاحظاتك</a>
+</div>
+
+  </div>
+</body>
+</html>

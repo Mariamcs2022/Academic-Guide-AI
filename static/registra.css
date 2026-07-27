@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Tajawal", sans-serif;
+}
+
+body {
+  background: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+}
+
+.header {
+
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000px;
+  border-bottom: #000000;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.header-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.style {
+  padding: 35px 35px;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 50px; 
+  width: 50%; 
+  max-width: 850px; 
+  margin-bottom: 30px;
+}
+
+.style:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.fieldset1 {
+  border: none;
+}
+
+.legend1 {
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.divstyle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.labelstyle {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: right;
+}
+
+/* ==== Input Fields ==== */
+.inputstyle {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  text-indent: 5px;
+  text-align: right;
+}
+
+.inputstyle:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(21, 94, 102, 0.2);
+}
+
+/* ==== Submit Button ==== */
+.bit {
+  width: 100%;
+  padding: 12px;
+  background-color: #116b57;
+  border: none;
+  border-radius: 25px 0 25px 0;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bit:hover {
+  background: #e6eff1;
+  color: #155e66;
+}
+
+.sing {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.taxt {
+  font-size: 15px;
+  color: #000000;
+}
+
+.sing a {
+  color: #003223;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.sing a:hover {
+  text-decoration: underline;
+}
+
+/* ==== Error Handling ==== */
+.erors {
+  color: #780606;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  text-indent: 5px;
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+.invalid-feedback span {
+  color: #8f0d0d;
+  font-size: 18px;
+  margin-left: 10px;
+  padding-top: 8px;
+  font-weight: bold;
+  text-align: right;
+
+
+}
+
+.messages {
+  padding-top: 15px;
+  text-align: center;
+  color: #034e5f;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: aliceblue;
+  border-radius: 2rem;
+text-align: center;
+
+}
+.header-container a{
+text-decoration: none;
+color: #003223;
+border: #000000 ;
+padding: 10px;
+font-size: 20px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+ .header-container a:hover{
+text-decoration: underline;
+background-color: #f0f0f0;
+font-size: 23px;
+border-radius: 2rem;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل</title>
+    <link rel="stylesheet" href="/static/projct2.css">
+    <link rel="icon" href="static/images/Online.png" type="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> <!-- end head-->
+<body>
+    
+</body> <!-- start body -->
+<header id="header">
+  <nav class="nav1">
+    <a href="#Home">
+      <img src="{{ url_for('static', filename='images/Online.png') }}" alt="learing" class="logo2">
+    </a>
+    <ul>
+      <li class="Hstyle"><a href="#contact">تواصل معنا</a></li>
+
+<li class="Hstyle">
+  <select id="loginSelect" onchange="handleLogin(this)">
+    <option selected disabled>الدخول</option>
+    <option value="{{ url_for('ladmin') }}">دخول المشرف</option>
+  </select>
+</li>
+
+<li class="Hstyle">
+  <select id="registerSelect" onchange="handleRegister(this)">
+    <option selected disabled>تسجيل</option>
+    <option value="{{ url_for('radmin') }}">تسجيل المشرف</option>
+  </select>
+</li>
+      <li class="Hstyle"><a href="#About">نصيحتنا لك</a></li>
+      <li class="Hstyle"><a href="#Beneficiaries">الفوايد</a></li>
+      <li class="Hstyle"><a href="#Home">الرئيسية</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+</ul>
+</nav>
+</header> <!-- end header-->
+
+<section id="Home"> <!--  start home-->
+<div class="continer">
+<div class="home11">
+<div class="home1">
+<h1> اهلا بك بالدليل الأكاديمي في  اختيار الكليات المناسبه لك </h1>
+<p> يهدف الاختبار إلى أن يكون بمثابة مرشد أكاديمي ذكي يوجّهك نحو المجال الذي يناسب قدراتك وطموحاتك، حتى تتجنب الضياع بين التخصصات وتبدأ طريقك بثقة ووضوح</p>
+<div>
+<a href= "{{ url_for('informtion') }}" id = "startBtn"></i>ابدأ الاختبار الان</a>
+
+
+</div>
+</div>
+</div>
+</section> <!-- end home-->
+
+<section id ="Beneficiaries"> <!--  start Beneficiaries -->
+<div class="continer">
+<div class="titles">
+<h2> فوائد اختبار الدليل الأكاديمي</h2>
+
+</div>  
+<div class="Bene1">
+<div class="Beneficiaries1">
+ <img src="{{ url_for('static' , filename ='images/lovepik.png') }}"    alt=""    class="img3">
+<h2>يكتشف ميولك الحقيقية</h2>
+<p>يعرفك على المجالات التي تناسب قدراتك وطموحاتك، بعيدًا عن الحيرة والتقليد</p>
+</div>
+<div class="Beneficiaries1">
+ <img src="{{ url_for('static' , filename ='images/teatchar2.jpg') }}"    alt=""    class="img3">
+<h2>يزيد وعيك بنفسك</h2>
+<p>تتعرف على نقاط قوتك وأنماط تفكيرك وطريقتك الخاصة في التعلم والنجاح</p>
+</div>
+<div class="Beneficiaries1">
+ <img src="{{ url_for('static' , filename ='images/03.png') }}"    alt=""    class="img3">
+<h2>يرسم لك خريطة طريق لمستقبلك الأكاديمي</h2>
+<p>يوجهك للكليات المناسبة لك بناءً على شخصيتك</p>
+</div>
+</div>
+</div>
+</section> <!-- end Beneficiaries -->
+
+<section id="About"><!--  start about--> 
+<div class="continer">
+<div class="title">
+<h1>نصيحتنا لك </h1>
+<h4>عدد الطلاب  الذين اجروا الاختبار</h4>
+<h2 id = "counter1">{{ visits}}</h2>
+</div> 
+<div class="About1">
+<div class="About2">
+<img src= "{{ url_for('static' , filename ='images/online3.jpg') }}" alt="" class="img1">
+</div> 
+
+<div class="about-con">
+<h1> نحن ننصحك بإجراء اختبار الدليل الأكاديمي</h1>
+<p class="text">لتكوّن لنفسك خطة أولية واضحة عن مستقبلك الأكاديمي والمجالات التي قد تناسبك.
+الاختبار يمنحك نظرة مبدئية على التخصصات التي تنسجم مع شخصيتك، ويساعدك تكتشف مجالات جديدة قد لم تفكر بها من قبل</p>
+
+
+<p class="text">سيكون هذا الاختبار خطوتك الأولى نحو مستقبلٍ تحفيزي ومشرق، يمنحك الثقة لتبحث، وتكتشف، وتختار بحرية المجال الذي يناسبك فعلًا
+  وتمنياتنا لك بالتوفيق والسداد في رحلتك الأكاديمية والإبداعية  </p>
+
+</div>
+</div>
+</section> <!-- end abute-->
+ <footer id="contact">
+  <div class="footer-inner">
+
+    <!-- العمود الأول -->
+    <div class="footer-col">
+      <h4>روابط ذات صلة</h4>
+      <ul>
+        <li><a href="https://www.facebook.com/Banein" target="_blank">Facebook</a></li>
+        <li><a href="https://x.com/moe_gov_sa" target="_blank">Twitter</a></li>
+        <li><a href="https://nataeji.moe.gov.sa/" target="_blank">منصه نتائجي</a></li>
+        <li><a href="https://www.moe.gov.sa/ar/Pages/default.aspx" target="_blank">وزارة التعليم</a></li>
+        <li><a href="https://www.moe.gov.sa/ar/mediacenter/MOEnews/Pages/default.aspx" target="_blank">اخبار عن المنصة</a></li>
+      </ul>
+    </div>
+
+    <!-- العمود الثاني -->
+    <div class="footer-col">
+      <h4>المنصات التعليمية</h4>
+      <ul>
+        <li><a href="https://schools.madrasati.sa/" target="_blank">منصة مدرستي</a></li>
+        <li><a href="https://noor.moe.gov.sa/Noor/EduWaveLanding/Home.aspx" target="_blank">نظام نور</a></li>
+      </ul>
+    </div>
+
+    <!-- العمود الثالث -->
+    <div class="footer-col">
+      <h4>روابط هامة</h4>
+      <ul>
+        <li><a href="https://e-services.etec.gov.sa/Qiyas.TRAS.Web.Internet/Account/Index"target="_blank" >قياس</a></li>
+        <li><a href="https://moe.gov.sa/ar/aboutus/Portal/Application/Pages/tawasul.aspx" target="_blank">تواصل</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-meta">
+  </div>
+</footer>
+<script src="static/brt.js" ></script>
+
+</body>
+</html>

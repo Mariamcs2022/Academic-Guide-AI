@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لوحة التحكم</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}" />
+    <link rel="icon" href="{{ url_for('static', filename='images/gra.png') }}" type="icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="style2">
+      <ul>
+        <li class="profile">
+          <div class="img-box">
+            <img
+              src="{{ url_for('static', filename='images/student-icon-png_124526.jpg') }}"
+              alt="admin"
+            />
+          </div>
+          <h2>مرحبًا {{ session['admin'] }}</h2>
+        </li>
+
+        <li class="active">
+          <a href="#dashboard"><i class="fas fa-home"></i>
+            <p>الصفحة الرئيسية</p></a>
+        </li>
+
+        <li><a href="#results"><i class="fa-solid fa-graduation-cap"></i>
+            <p>النتائج</p></a>
+        </li>
+
+        <li><a href="#feedback"><i class="fas fa-comments"></i>
+            <p>آراء الطلاب</p></a>
+        </li>
+
+        <li class="log-out">
+          <a href="{{ url_for('home') }}"><i class="fas fa-sign-out"></i>
+            <p>تسجيل الخروج</p></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+
+      <div class="title">
+        <i class="fas fa-chart-pie"></i>
+        <h3>لوحة التحكم</h3>
+      </div>
+      <!-- الأقسام الأربعة -->
+      <div class="data-in">
+        <div class="box">
+          <i class="fa-solid fa-list"></i>
+          <div class="data1">
+            <p>عدد النتائج</p>
+            <span>{{ total_results }}</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-comments"></i>
+          <div class="data1">
+            <p>عدد الآراء</p>
+            <span>{{ total_feedbacks }}</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-chart-column"></i>
+          <div class="data1">
+            <p>أكثر كلية ترشيحًا</p>
+            <span>{{ top_college }}</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-arrow-down"></i>
+          <div class="data1">
+            <p>أقل كلية ترشيحًا</p>
+            <span>{{ lowest_college }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="title" id="results">
+         <i class="fas fa-table"></i>
+        <h3>النتائج الحديثة</h3>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>الكلية المقترحة</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in result_stats %}
+          <tr>
+            <td>{{ r[0] }}</td>
+          
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <div class="title" id="feedback">
+      <i class="fas fa-comments"></i>
+        <h3>آخر آراء الطلاب</h3>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>الرأي</th>
+            <th>التاريخ</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for fb in feedbacks %}
+          <tr>
+            <td>{{ fb[0] }}</td>
+            <td>{{ fb[1] }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+    </div>
+  </body>
+</html>

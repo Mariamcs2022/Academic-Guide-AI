@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دليل</title>
+    <link rel="stylesheet" href="static/formes3.css" />
+        <link rel="icon" href="static/images/Online.png" type="icon">
+
+  </head>
+  <body>
+    <div class="container">
+      <h2>الأسئلة</h2>
+      <div id="progress"><div id="bar"></div></div>
+      <form method="POST" action="/predict" id="form1">
+        <!-- الدفعة الأولى -->
+        <div class="question-group">
+          <fieldset>
+            <legend>1. هل تتشتت بسهولة بسبب الضوضاء أو الأنشطة من حولك؟</legend>
+            <label><input type="radio" name="q0" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q0" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q0" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q0" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q0" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>2. هل تجد صعوبة في التركيز عندما يتحدث إليك الآخرون مباشرة؟</legend>
+            <label><input type="radio" name="q1" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q1" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q1" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q1" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q1" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>3. عندما تواجه مهمة تتطلب تفكيراً عميقاً، هل تميل لتأجيلها أو تجنبها؟</legend>
+            <label><input type="radio" name="q2" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q2" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q2" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q2" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q2" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>4. هل تجد صعوبة في انتظار دورك في المواقف التي تتطلب صبراً؟</legend>
+            <label><input type="radio" name="q3" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q3" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q3" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q3" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q3" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>5. هل تجد صعوبة في إنهاء التفاصيل الصغيرة بعد إنجاز الجزء الصعب من المهمة؟</legend>
+            <label><input type="radio" name="q4" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q4" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q4" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q4" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q4" value="Never"> أبداً</label>
+          </fieldset>
+        </div>
+
+        <!-- الدفعة الثانية -->
+        <div class="question-group hidden">
+          <fieldset>
+            <legend>6. هل تقوم عادة بوضع خطط واضحة وتلتزم بها؟</legend>
+            <label><input type="radio" name="q5" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q5" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q5" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q5" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q5" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>7. عندما تواجه قراراً مهماً، هل تعتمد على تحليل البيانات قبل اتخاذ القرار؟</legend>
+            <label><input type="radio" name="q6" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q6" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q6" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q6" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q6" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>8. هل تتخذ قراراتك بنفسك دون استشارة الآخرين؟</legend>
+            <label><input type="radio" name="q7" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q7" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q7" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q7" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q7" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>9. هل ترى نفسك شخصاً مبدعاً وصاحب عقل ابتكاري؟</legend>
+            <label><input type="radio" name="q8" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q8" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q8" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q8" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q8" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>10. هل تحب التغيير المستمر والابتكار في الطرق التي تستخدمها؟</legend>
+            <label><input type="radio" name="q9" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q9" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q9" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q9" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q9" value="Never"> أبداً</label>
+          </fieldset>
+        </div>
+
+        <!-- الدفعة الثالثة -->
+        <div class="question-group hidden">
+          <fieldset>
+            <legend>11. هل تنجذب إلى الأنشطة الجديدة والمثيرة؟</legend>
+            <label><input type="radio" name="q10" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q10" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q10" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q10" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q10" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>12. هل تستمتع بالعمل الذي يتطلب الإبداع الفني أو التصميم البصري؟</legend>
+            <label><input type="radio" name="q11" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q11" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q11" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q11" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q11" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>13. هل تفضل مواجهة التحديات التي تتطلب حل المشكلات قبل البحث عن إجابات جاهزة؟</legend>
+            <label><input type="radio" name="q12" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q12" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q12" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q12" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q12" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>14. هل تفضل بيئة عمل مليئة بالتفاعل والنقاش؟</legend>
+            <label><input type="radio" name="q13" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q13" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q13" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q13" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q13" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>15. هل تستمتع بالتواصل اليومي المستمر مع الآخرين؟</legend>
+            <label><input type="radio" name="q14" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q14" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q14" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q14" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q14" value="Never"> أبداً</label>
+          </fieldset>
+        </div>
+
+        <!-- الدفعة الرابعة -->
+        <div class="question-group hidden">
+          <fieldset>
+            <legend>16. هل تميل إلى التعبير عن أفكارك ومشاعرك بحرية أمام الآخرين؟</legend>
+            <label><input type="radio" name="q15" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q15" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q15" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q15" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q15" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>17. هل تشعر بالرضا عند مساعدة الآخرين وحل مشاكلهم الشخصية؟</legend>
+            <label><input type="radio" name="q16" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q16" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q16" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q16" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q16" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>18. هل تستمتع بالأنشطة التي تتطلب دقة عالية والانتباه للتفاصيل الصغيرة؟</legend>
+            <label><input type="radio" name="q17" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q17" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q17" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q17" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q17" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>19. هل تفضل الخبرات العملية على الأفكار النظرية؟</legend>
+            <label><input type="radio" name="q18" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q18" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q18" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q18" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q18" value="Never"> أبداً</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>20. هل تميل إلى قراءة الكتب وكتابة أفكارك أو تعلم لغات جديدة باستمرار؟</legend>
+            <label><input type="radio" name="q19" value="Always" required> دائماً</label><br>
+            <label><input type="radio" name="q19" value="Often"> غالباً</label><br>
+            <label><input type="radio" name="q19" value="Rarely"> نادراً</label><br>
+            <label><input type="radio" name="q19" value="Sometimes"> أحياناً</label><br>
+            <label><input type="radio" name="q19" value="Never"> أبداً</label>
+          </fieldset>
+        </div>
+
+        <div class="buttons">
+          <button type="button" id="nextBtn">التالي</button>
+          <button type="submit" id="submitBtn" class="hidden">إرسال</button>
+        </div>
+      </form>
+    </div>
+    <script src="static/jss.js"></script>
+  </body>
+</html>

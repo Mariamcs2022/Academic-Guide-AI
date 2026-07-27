@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>informtion</title>
+  <link rel="stylesheet" href="/static/informtion1.css"/>
+  <link rel="icon" href="./static/images/gra.png" type="icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <div class="informtion">
+    
+    <div class="img">
+      <img src="{{ url_for('static', filename='images/lovepik.png') }}" alt="stud" class="img1">
+    </div>
+
+    <div class="text">
+      <h1><i class="fa-solid fa-star"></i> مرحبًا بك في دليلك  الأكاديمي</h1>
+      <div class="time-msg">⏱️ يستغرق تقريباً 3 دقائق فقط</div>
+      <ul class="rules">
+        <li>الاختبار يتكون من 20 سؤال فقط</li>
+        <li>لا توجد إجابة صحيحة أو خاطئة</li>
+        <li>اختار ما يعبر عنك بشكل أقرب لشخصيتك</li>
+      </ul>
+      <a href="{{ url_for('form') }}" target="_blank" class="butom1">
+        <i class="fa-solid fa-play"></i> ابدأ الآن
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admins log in</title>
+     <link rel="stylesheet" href="static/login.css">
+    <link rel="icon" href="static/images/Online.png" type="icon">
+
+</head>
+<body>
+   <header class="header">
+      <div class="header-container">
+        <img src="{{ url_for('static', filename='images/Online.png') }}" alt="Logo" class="logo" />
+     <a href="{{ url_for('home') }}" target="_blank">الخروج </a>
+      </div>
+    </header>
+    {% block content%}
+   <div class="style">
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for message in messages %}
+<div class="messages"> 
+    {{ message}}
+</div>
+{% endfor %}
+{% endif  %}
+{% endwith %}
+
+
+<form action="" method="post">
+    {{ form.hidden_tag ()}}
+<fieldset class="fieldset1">
+<legend class="legend1"> دخول المشرف</legend>
+<div class="divstyle">
+        {{ form.email.label(class='labelstyle')}}
+                {% if form.email.errors%}
+                {{ form.email(class='erors')}}
+                <div class="invalid-feedback">
+                    {% for error in form.email.errors %}
+                    <span>{{error}}</span>
+                    {% endfor %}
+                </div>
+                {% else %}
+                {{ form.email(class='inputstyle')}}
+                {% endif %}
+</div>
+<div class="divstyle">
+         {{ form.password.label(class='labelstyle')}}
+                {% if form.password.errors%}
+                {{ form.password(class='erors')}}
+                <div class="invalid-feedback">
+                    {% for error in form.password.errors %}
+                    <span>{{error}}</span>
+                    {% endfor %}
+                </div>
+                {% else %}
+                {{ form.password(class='inputstyle')}}
+                {% endif %}
+</div>
+<div class="divstyle">
+    
+        {{form.submit(class='bit')}}
+</div>
+
+</fieldset>
+</form>
+<div class="style2">
+<h5>
+<a href="{{ url_for('radmin') }}"> سجل هنا </a>
+</h5>
+</div>
+</div>
+   </div>
+     {% endblock content%} 
+</body>
+</html>

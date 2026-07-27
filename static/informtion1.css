@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #e7f5ff, #f7fbff);
+  min-height: 100vh;
+  font-family: 'Tajawal', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+/* ==== CARD ==== */
+.informtion {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* الصورة يسار والنص يمين */
+  align-items: center;
+  gap: 30px;
+  width: 900px;
+  padding: 50px;
+  background-color: #f7fbff;
+  border-radius: 15px;
+}
+
+/* image */
+.img1 {
+  height: 230px;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,.25));
+  border-radius: 0 8rem 0 8rem;
+  object-fit: cover;
+  justify-self: center;
+}
+
+/* text section */
+.informtion h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.time-msg {
+  text-align: right;
+  font-size: 17px;
+  margin-bottom: 16px;
+  opacity: .85;
+}
+
+.rules {
+  text-align: right;
+  margin: 15px 0 30px 0;
+  font-size: 18px;
+  line-height: 1.7;
+  list-style: none;
+  padding-right: 20px;
+}
+
+/* button */
+.butom1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 14px;
+  border-radius: 15px;
+  background: #fff;
+  font-size: 21px;
+  font-weight: bold;
+  color: #000;
+  border: none;
+  text-decoration: none;
+  transition: 0.25s;
+  box-shadow: 0 6px 18px rgba(0,0,0,.20);
+}
+
+.butom1:hover {
+  transform: scale(1.03);
+  background: linear-gradient(135deg, #d0eaff, #ffffff);
+}
+
+/* responsive */
+@media (max-width: 850px) {
+  .informtion {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 30px;
+  }
+  .img1 {
+    height: 150px;
+    margin: 0 auto 20px auto;
+  }
+}
