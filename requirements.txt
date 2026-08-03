@@ -1,5 +1,8 @@
 Flask
-numpy
-scikit-learn
-joblib
+Flask-WTF
+WTForms
 Werkzeug
+numpy
+joblib
+scikit-learn
+gunicorn

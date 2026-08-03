@@ -8,8 +8,8 @@ import numpy as np
 app = Flask(__name__) 
 app.config['SECRET_KEY'] = 'mariam20032003600'
 
-model = joblib.load(r"Model\college1_model.pkl")
-le = joblib.load(r"Model\label1_encoder.pkl")
+model = joblib.load(r"Model/college1_model.pkl")
+le = joblib.load(r"Model/label1_encoder.pkl")
 
 college_majors = {
     "كلية العلوم الطبية": [
