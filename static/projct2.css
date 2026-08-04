@@ -358,7 +358,9 @@ padding-top: 30px;
 
 .Beneficiaries1{
     width: 90%;
-    height: 80%;
+    height: auto;
+    padding: 20px;
+    min-height: 350px;
 }
 
   .Bene1 h2 {
@@ -393,7 +395,10 @@ padding-top: 30px;
     width: 90%;
     height: auto;
 }
+#Home{
 
+ min-height: 80vh;
+}
 #Home .home1 p{
     font-size:18px;
     margin:20px;
@@ -417,6 +422,8 @@ padding-top: 30px;
 .about-con h1
 {
     font-size: 17px;
+    align-items: center;
+    text-align: center;
 }
 .about-con p{
     font-size: 16px;
