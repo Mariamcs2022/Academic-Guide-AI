@@ -357,7 +357,7 @@ padding-top: 30px;
 }
 
 .Beneficiaries1{
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -394,11 +394,6 @@ padding-top: 30px;
     height: auto;
 }
 
-#Home{
-    background-size:cover;
-    background-position:center;
-}
-
 #Home .home1 p{
     font-size:18px;
     margin:20px;
@@ -419,6 +414,16 @@ padding-top: 30px;
     width: 90%;
     height: auto;
 }
+.about-con h1
+{
+    font-size: 17px;
+}
+.about-con p{
+    font-size: 16px;
+    margin:20px;
+}
+
+
 .nav1{
     flex-direction:column;
 }
