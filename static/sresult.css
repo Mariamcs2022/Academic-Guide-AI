@@ -164,24 +164,6 @@ font-size: 16px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes slideDown {
     from {
         top: -60px;
@@ -207,3 +189,4 @@ font-size: 16px;
     transform: translateY(0);
   }
 }
+
