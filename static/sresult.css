@@ -189,4 +189,20 @@ font-size: 16px;
     transform: translateY(0);
   }
 }
+@media (max-width: 768px) {
+  .college-card {
+    width: 90%;
+    padding: 15px;
+  }
 
+  .college-card h3 {
+    font-size: 18px;
+  }
+
+  .college-card p {
+    font-size: 14px;
+  }
+  .img {
+    width: 200px;  /* تقليل حجم الصورة على الشاشات الصغيرة */
+  }
+}
