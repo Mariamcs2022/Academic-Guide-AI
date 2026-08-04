@@ -350,21 +350,16 @@ padding-top: 30px;
     width: 100%;
   }
 
-  .Bene1 {
+ .Bene1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
-    padding-top: 30px;
-  }
+}
 
-  .Bene1 {
+.Beneficiaries1{
     width: 90%;
-    max-width: 340px;
     height: auto;
-    padding: 20px;
-    margin: 0 auto;
-  }
+}
 
   .Bene1 h2 {
     font-size: 22px;
@@ -383,7 +378,20 @@ padding-top: 30px;
     font-size: 13px;
   }
 #Home .home11{
-    grid-template-columns:1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#Home .home1,
+#Home .home2{
+    width: 100%;
+}
+
+#Home .home2 img{
+    width: 90%;
+    height: auto;
 }
 
 #Home{
@@ -396,12 +404,20 @@ padding-top: 30px;
     margin:20px;
 }
 .About1{
-    grid-template-columns:1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.About2,
+.About3{
+    width: 100%;
 }
 
 .About2 img{
-    width:100%;
-    height:auto;
+    width: 90%;
+    height: auto;
 }
 .nav1{
     flex-direction:column;
@@ -425,5 +441,11 @@ padding-top: 30px;
 img{
     max-width:100%;
     height:auto;
+}
+.footer-container{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    gap:30px;
 }
 }
