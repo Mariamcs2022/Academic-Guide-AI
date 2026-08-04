@@ -112,3 +112,14 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
+@media screen and (max-width: 768px) {
+  .feedback-container {
+    width: 95%;
+    padding: 30px 20px;
+  }
+  .main-title {
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+
+}
