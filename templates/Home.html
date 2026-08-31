@@ -96,6 +96,21 @@
 </div>
 </div>
 </section> <!-- end abute-->
+
+<section id ="feedback"> <!--  start feedback-->
+<div class="continer">
+<div class="feedback-title">
+<h2>آراء المستخدمين</h2>
+</div>  
+{% for feedback in feedbacks %}
+    <div class="feedback-card">
+        <p>{{ feedback[0] }}</p>
+    </div>
+{% endfor %}
+</div>
+</section> <!-- end feedback -->
+
+
  <footer id="contact">
   <div class="footer-inner">
 
@@ -128,11 +143,12 @@
         <li><a href="https://moe.gov.sa/ar/aboutus/Portal/Application/Pages/tawasul.aspx" target="_blank">تواصل</a></li>
       </ul>
     </div>
-
   </div>
 
-  <div class="footer-meta">
+<div class="footer-bottom">
+    <p>Developed by Mariam </p> 
   </div>
+  
 </footer>
 <script src="static/brt.js" ></script>
 

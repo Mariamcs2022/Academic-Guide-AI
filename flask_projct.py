@@ -60,8 +60,17 @@ def home():
     cursor = conn.cursor() 
     cursor.execute( "SELECT  visits  FROM counter WHERE id= 1")
     visits = cursor.fetchone() [0]
+
+    cursor.execute("""
+        SELECT feedback_text 
+        FROM student_feedback  
+        ORDER BY date DESC 
+        LIMIT 3
+    """)
+    feedbacks = cursor.fetchall()
+
     conn.close()
-    return render_template("Home.html" , visits = visits )
+    return render_template("Home.html" , visits = visits , feedbacks = feedbacks )
 
 
 @app.route('/start_test')
