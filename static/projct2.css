@@ -431,364 +431,317 @@ a {
   .feedback-card p {
     font-size: 16px;
   }
-}
-/* ================= Mobile Responsive ================= */
+}/* ================= Mobile Responsive ================= */
+
 @media screen and (max-width: 768px) {
-  .footer-inner {
-    flex-direction: column;
-    text-align: center;
-    gap: 25px;
+
+  /* ===== Header ===== */
+  #header {
+    height: 75px;
+    padding: 0 8px;
   }
 
-  .footer-col {
+  .nav1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+  }
+
+  .logo2 {
+    height: 75px;
+    margin: 0;
+  }
+
+  .nav1 ul {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  #header .nav1 li a {
+    font-size: 12px;
+    margin: 0;
+    padding: 5px 6px;
+    white-space: nowrap;
+  }
+
+
+  /* ===== Home ===== */
+
+  #Home {
+    min-height: 100vh;
+    padding: 100px 15px 50px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #Home .continer {
     width: 100%;
+  }
+
+  #Home .home11 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #Home .home1 {
+    width: 100%;
+  }
+
+  #Home .home1 h1 {
+    font-size: 25px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  #Home .home1 p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 15px 10px 30px;
+    text-align: center;
+  }
+
+  #startBtn {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 15px auto;
+    transform: scale(1);
+  }
+
+
+  /* ===== Beneficiaries ===== */
+
+  #Beneficiaries {
+    padding: 40px 15px;
+  }
+
+  #Beneficiaries .titles {
+    padding-top: 20px;
+    margin-top: 10px;
+  }
+
+  #Beneficiaries .titles h2 {
+    font-size: 21px;
+    transform: scale(1);
+    padding: 12px 18px;
   }
 
   .Bene1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 25px;
+    padding-top: 20px;
+    margin-top: 20px;
   }
 
   .Beneficiaries1 {
     width: 90%;
+    max-width: 330px;
     height: auto;
-    padding: 20px;
-    min-height: 200px;
+    min-height: 260px;
+    margin: 0;
+    padding: 25px 20px;
   }
 
-  .Bene1 h2 {
-    font-size: 22px;
+  .Beneficiaries1 h2 {
+    font-size: 20px;
+    line-height: 1.5;
   }
 
-  .Bene1 p {
-    font-size: 16px;
+  .Beneficiaries1 p {
+    font-size: 15px;
+    line-height: 1.8;
   }
 
-  #B.Bene1 .img3 {
+  #Beneficiaries .img3 {
     width: 80px;
     height: 80px;
   }
 
-  .footer-meta p {
-    font-size: 13px;
-  }
-  #Home .home11 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
+  /* ===== About ===== */
+
+  #About {
+    padding: 50px 15px;
   }
 
-  #Home .home1,
-  #Home .home2 {
-    width: 100%;
+  #About .title {
+    margin: 30px auto;
+    padding-top: 10px;
   }
 
-  #Home .home2 img {
-    width: 90%;
-    height: auto;
+  #About .title h1 {
+    font-size: 25px;
   }
 
-  #Home .home1 p {
-    font-size: 18px;
-    margin: 20px;
-  }
   .About1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    gap: 25px;
+    margin-bottom: 30px;
   }
 
   .About2,
   .About3 {
     width: 100%;
+    text-align: center;
   }
 
   .About2 img {
     width: 90%;
+    max-width: 350px;
     height: auto;
+    margin: 0 auto 20px;
   }
+
+  .about-con {
+    width: 100%;
+  }
+
   .about-con h1 {
-    font-size: 19 px;
-    align-items: center;
+    font-size: 22px;
     text-align: center;
   }
+
   .about-con p {
     font-size: 16px;
-    margin: 20px;
+    line-height: 1.9;
+    margin: 15px 10px;
+    text-align: center;
+  }
+
+
+  /* ===== Feedback ===== */
+
+  #feedback {
+    padding: 40px 15px;
+  }
+
+  #feedback .continer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #feedback .feedback-title {
+    transform: scale(1);
+    width: fit-content;
+    margin-bottom: 20px;
+  }
+
+  .feedback-title h2 {
+    font-size: 24px;
+  }
+
+  .feedback-card {
+    width: 250px;
+    height: 250px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto 20px;
+    padding: 20px;
+  }
+
+  .feedback-card p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+
+  /* ===== Footer ===== */
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .footer-col {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .footer-col h4 {
+    font-size: 18px;
+  }
+
+  .footer-col ul li a {
+    font-size: 15px;
+  }
+
+  .footer-meta p,
+  .footer-bottom p {
+    font-size: 13px;
+  }
+
+
+  /* ===== Back To Top ===== */
+
+  #topButton {
+    width: 40px;
+    height: 40px;
+    right: 15px;
+    bottom: 15px;
+    font-size: 20px;
+  }
+}
+
+
+/* ===== Small Phones ===== */
+
+@media screen and (max-width: 400px) {
+
+  #header {
+    height: 70px;
   }
 
   .nav1 {
-    flex-direction: column;
+    height: 70px;
   }
 
-  .nav1 ul {
-    gap: 10px;
-    margin-top: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #header {
-    height: auto;
-    padding: 10px;
+  .logo2 {
+    height: 65px;
   }
 
   #header .nav1 li a {
+    font-size: 10px;padding: 4px;
+  }
+
+  #Home {
+    padding-top: 90px;
+  }
+
+  #Home .home1 h1 {
+    font-size: 22px;
+  }
+
+  #Home .home1 p {
+    font-size: 15px;
+  }
+
+  #startBtn {
     font-size: 18px;
   }
-  img {
-    max-width: 100%;
-    height: auto;
+
+  .Beneficiaries1 {
+    width: 95%;
   }
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
+
+  .feedback-card {
+    width: 230px;
+    height: 230px;
   }
 }
-.footer-bottom {
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.footer-bottom p {
-    margin: 0;
-    font-size: 14px;
-    color: #ffffff;
-}
-
-/* =========================================
-   EXTRA JAVASCRIPT ANIMATIONS
-========================================= */
-
-
-/* Header عند النزول */
-#header {
-    transition: all 0.35s ease;
-}
-
-#header.scrolled {
-    height: 5rem;
-    background-color: #238f80;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-
-/* الرابط النشط */
-#header .nav1 li a.active-link {
-    background-color: #ffffff;
-    color: #185356;
-}
-
-
-/* =========================================
-   ظهور الكروت
-========================================= */
-
-.Beneficiaries1,
-.feedback-card,
-.About1,
-.footer-col {
-    opacity: 0;
-    transform: translateY(45px);
-    transition:
-        opacity 0.7s ease,
-        transform 0.7s ease,
-        box-shadow 0.3s ease;
-    transition-delay: var(--delay, 0s);
-}
-
-.reveal-show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-/* =========================================
-   حركة الصور
-========================================= */
-
-.Beneficiaries1 img {
-    animation: floating 3s ease-in-out infinite;
-}
-
-.About2 img {
-    animation: floating 4s ease-in-out infinite;
-}
-
-@keyframes floating {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-8px);
-    }
-}
-
-
-/* =========================================
-   زر الاختبار
-========================================= */
-
-#startBtn {
-    transition: all 0.3s ease;
-    animation: buttonPulse 2.5s infinite;
-}
-
-#startBtn:hover,
-#startBtn.button-hover {
-    transform: scale(1.08);
-}
-
-#startBtn.button-click {
-    transform: scale(0.92);
-}
-
-
-@keyframes buttonPulse {
-
-    0% {
-        box-shadow: 0 10px 15px rgba(0, 66, 73, 0.3);
-    }
-
-    50% {
-        box-shadow: 0 15px 30px rgba(0, 140, 124, 0.55);
-    }
-
-    100% {
-        box-shadow: 0 10px 15px rgba(0, 66, 73, 0.3);
-    }
-}
-
-
-/* =========================================
-   عنوان الرئيسية
-========================================= */
-
-.home-title-animation {
-    animation: homeTitle 1s ease forwards;
-}
-
-.home-text-animation {
-    animation: homeText 1.2s ease 0.25s forwards;
-    opacity: 0;
-}
-
-@keyframes homeTitle {
-
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes homeText {
-
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
-/* =========================================
-   Back To Top
-========================================= */
-
-#topButton {
-    position: fixed;
-
-    bottom: 25px;
-    right: 25px;
-
-    width: 45px;
-    height: 45px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: #008c7c;
-    color: white;
-
-    font-size: 24px;
-    font-weight: bold;
-
-    cursor: pointer;
-
-    opacity: 0;
-    visibility: hidden;
-
-    transition: all 0.3s ease;
-
-    z-index: 9999;
-}
-
-#topButton.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-#topButton:hover {
-    transform: translateY(-6px) scale(1.08);
-    background: #006f64;
-}
-
-
-/* =========================================
-   Reduce Motion
-========================================= */
-
-.reduce-motion *,
-.reduce-motion *::before,
-.reduce-motion *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-}
-
-
-/* =========================================
-   Mobile
-========================================= */
-
-@media (max-width: 768px) {
-
-    #header.scrolled {
-        height: auto;
-    }
-
-    #startBtn:hover,
-    #startBtn.button-hover {
-        transform: scale(1.03);
-    }
-
-    #topButton {
-        width: 40px;
-        height: 40px;
-        right: 15px;
-        bottom: 15px;
-        font-size: 20px;
-    }
-
-}
-
