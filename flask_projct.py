@@ -4,9 +4,14 @@ from form import RegistrationAdmin , LoginAdmin
 from werkzeug.security import generate_password_hash, check_password_hash
 import joblib
 import numpy as np
+import os
+from dotenv import load_dotenv
 
 app = Flask(__name__) 
-app.config['SECRET_KEY'] = 'mariam20032003600'
+
+load_dotenv()
+
+SECURITY_KEY = os.getenv("SECURITY_KEY")
 
 model = joblib.load(r"Model/college1_model.pkl")
 le = joblib.load(r"Model/label1_encoder.pkl")
