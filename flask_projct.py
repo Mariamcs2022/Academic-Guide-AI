@@ -6,12 +6,9 @@ import joblib
 import numpy as np
 import os
 from dotenv import load_dotenv
-
-app = Flask(__name__) 
-
 load_dotenv()
-
-SECURITY_KEY = os.getenv("SECURITY_KEY")
+app = Flask(__name__) 
+app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 
 model = joblib.load(r"Model/college1_model.pkl")
 le = joblib.load(r"Model/label1_encoder.pkl")
