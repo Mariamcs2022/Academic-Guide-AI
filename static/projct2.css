@@ -698,7 +698,12 @@ a {
     font-size: 20px;
   }
 }
-
+.footer-bottom{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #cfd8dc;
+}
 
 /* ===== Small Phones ===== */
 
